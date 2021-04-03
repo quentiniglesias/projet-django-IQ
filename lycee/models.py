@@ -23,7 +23,8 @@ class Cursus(models .Model):
     default='0000-00001'
   )
 
-  class Student(models .Model):
+
+class Student(models .Model):
   first_name = models.CharField(
     max_length=50,
     blank=False,
@@ -36,7 +37,7 @@ class Cursus(models .Model):
   )
   last_name = models.CharField(
     verbose_name="lastname",
-    help_text="last name of the student "
+    help_text="last name of the student ",
     blank=False, # pas de champ vide
     null=False, # pas de champ null (a conjuguer avec default
     default="???",
